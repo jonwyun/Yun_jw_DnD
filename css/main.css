@@ -99,7 +99,11 @@ footer {
 	border: thin solid #333;
 	cursor: pointer;
 }
-
+     
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+#headLine h1 { transition: all 1.5s ease;}
+
+.orange-headline { color: orange;}
