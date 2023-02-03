@@ -13,15 +13,23 @@ let navButtons = document.querySelectorAll('#buttonHolder img'),
 // functions go in the middle
 // these are the "actions" that should happen
 function changeBGImage() {
-	debugger;
+
+	let newBGPath = "images/backGround" + this.id + ".jpg";
+
+	//url('../images/backGround0.jpg')
+	//debugger;
 	// object.property = "new value"
 	// theHeadline.textContent = "Drag and Drop is FUN!";
 	// theHeadline.style.color = "orange";
 	// theHeadline.classList.add('orange-headline')
 
 	// change the bg image in the drop zone
-	puzzleBoard.style.backgroundImage = 'url("../images/backGround" + this.id + ".jpg")';
-	// puzzleBoard.style.backgroundImage = url("../images/backGround0.jpg");
+	// puzzleBoard.style.backgroundImage = 'url("../images/backGround" '+ this.id +' ".jpg")';
+
+	// change the bg image in the drop zone
+	// the ${} is called a Javascript Template string - whatever is inside the curly
+	// braces is evaluated at runtime and interpolated (replaces the bracket notation)
+	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 }
 
 // event handling at the bottom ==> how things react when you
