@@ -56,12 +56,23 @@ body {
 
 .drop-zone {
 	width: 49.5%;
-  height: 49.5%;
-  border: thin dashed white;
-  float: left;
+  	height: 49.5%;
+  	border: thin dashed white;
+  	float: left;
 	position: relative;
 }
 
+.drop-zone img {
+	position: absolute;
+	width: 90% !important;
+	float: none;
+
+}
+
+.tl img { right: 0; bottom: 0;}
+.tr img { left: 0; bottom: 0;}
+.bl img { right: 0; top: 0;}
+.br img { left: 0; top: 0;}
 
 header {
 	position: relative;
@@ -73,7 +84,7 @@ header {
 
 header h1 {
 	font-size: 3.25em;
-  letter-spacing: 3px;
+    letter-spacing: 3px;
 	margin: 10px 0
 }
 
