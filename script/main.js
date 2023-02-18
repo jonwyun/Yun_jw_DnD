@@ -9,8 +9,8 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 function changeBGImage() {
 
     puzzlePieces.forEach(piece => {
-        var containerId = piece.dataset.container;
-        var container = document.getElementById(containerId);
+        const containerId = piece.dataset.container;
+        const container = document.getElementById(containerId);
         container.appendChild(piece);
     });
 
